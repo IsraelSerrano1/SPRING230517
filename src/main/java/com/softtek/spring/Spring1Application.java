@@ -26,26 +26,29 @@ public class Spring1Application implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        ejercicioSeguro();
-        ejercicioConductor();
         ejercicioDAO();
+        ejercicioConductor();
+        ejercicioSeguro();
+
+
     }
 
     private void ejercicioDAO() {
         System.out.println("\n********Prueba Ejercicio DAO******");
         Cliente c1 = new Cliente("Israel","32141324143Y");
-        System.out.println(cli1.insertar(c1));
+        System.out.println("El cliente " + c1.getNombre() + " tiene " + cli1.insertar(c1));
     }
 
     private void ejercicioConductor() {
         System.out.println("\n********Prueba Ejercicio Conductor******");
         ((CocheV)con1.getVehiculo()).setDeposito(20);
-        System.out.println(con1.conducir());
+        System.out.println(" El coche " + con1.conducir());
     }
 
     private void ejercicioSeguro() {
         System.out.println("\n*********Prueba Ejercicio Seguro******");
-        Coche c1 = new Coche("1234565HDP", "Renault");
-        System.out.println(s1.reparar(c1));
+        Coche c1 = new Coche("1234565HDP", "Scenic");
+        System.out.println("El coche modelo " + c1.getModelo() +
+                " con matricula: " + c1.getMatricula() + " " + s1.reparar(c1));
     }
 }

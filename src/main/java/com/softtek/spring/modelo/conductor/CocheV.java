@@ -25,7 +25,7 @@ public class CocheV implements IVehiculo {
     @Override
     public String moverse() {
         if (this.deposito > 0) {
-            return "Moviendose";
+            return "está moviendose";
         }else
             return "No se puede moverse";
     }
