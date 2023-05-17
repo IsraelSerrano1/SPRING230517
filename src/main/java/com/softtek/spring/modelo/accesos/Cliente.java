@@ -1,4 +1,4 @@
-package com.softtek.modelo.Ejercicio4;
+package com.softtek.spring.modelo.accesos;
 
 public class Cliente {
     private String nombre;

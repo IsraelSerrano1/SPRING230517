@@ -1,4 +1,4 @@
-package com.softtek.spring.modelo;
+package com.softtek.spring.modelo.seguro;
 
 public class Coche {
     private String matricula;

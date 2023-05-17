@@ -1,4 +1,4 @@
-package com.softtek.modelo.Ejercicio2;
+package com.softtek.spring.modelo.conductor;
 
 public interface IVehiculo {
     String moverse();
